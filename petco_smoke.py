@@ -12,7 +12,7 @@ class PetcoSmoke(unittest.TestCase):
         pass
 
     def test_petco_landing_equals_200(self):
-        """Very Basic test to assert to landing side response with 200"""
+        """assert to landing side response with 200"""
         r = requests.get('http://www.petco.com')
         self.assertEqual(r.status_code, 200)
 
@@ -28,6 +28,7 @@ class PetcoSmoke(unittest.TestCase):
     def test_petco_content_Encoding(self):
         r = requests.get('http://www.petco.com')
         self.assertEqual(r.headers['Content-Encoding'],'gzip')
+
 
 
 
