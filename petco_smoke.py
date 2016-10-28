@@ -12,7 +12,7 @@ class PetcoSmoke(unittest.TestCase):
         pass
 
     def test_petco_landing_equals_200(self):
-        """ simple hook test assert to landing side response with 200"""
+        """ simple hook test assert  landing side response with 200"""
         r = requests.get('http://www.petco.com')
         self.assertEqual(r.status_code, 200)
 
